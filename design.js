@@ -1,4 +1,4 @@
 // illustrations
-undraw.co
+undraw.co;
 // fonts pairing
-fontjoy.com
+fontjoy.com;
