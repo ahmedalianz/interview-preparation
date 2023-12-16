@@ -45,3 +45,6 @@ deepClone.nested.c = 999; // This only affects the clone
 console.log(originalObject3); // { a: 1, b: 2, nested: { c: 3 } }
 console.log(deepClone); // { a: 99, b: 2, nested: { c: 999 } }
 // modifying the nested object in the clone doesn't affect the original object.
+
+
+// we can use _.cloneDeep from lodash to do the deepCloning directly
