@@ -11,3 +11,6 @@ arr.sort((a, b) => b - a); // [ 163, 16, 12, 11, 5, 1 ] => going down
 
 let stingsArr = ['ahmed', 'emy', 'carl', 'basil', 'dad'];
 stingsArr.sort((a, b) => a.localeCompare(b)); // sort by string alphabetically
+
+// not to mutate the array we can use slice
+let newArr = arr.slice().sort((a, b) => a - b);

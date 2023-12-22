@@ -4,15 +4,15 @@
 
 const myMap = new Map([
   ['apple', 'red'],
-  [NaN, 'yello'],
+  [NaN, 'yellow'],
   [5, 'five'],
   [true, 'true'],
 ]);
 
-myMap.get(5); // 'five' no looping
+myMap.get(5); // 'five' directly no looping like normal array
 
 myMap.set(NaN, 'asd'); // mutates the Map
 // myMap ===>  { 'apple' => 'red', NaN => 'asd', 5 => 'five', true => 'true' }
 
 let x = [...myMap.values()];
-// [ 'red', 'yello', 'five', 'true' ]
+// [ 'red', 'yellow', 'five', 'true' ]
