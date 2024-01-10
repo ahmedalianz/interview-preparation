@@ -81,3 +81,7 @@ console.log(archer) // health is 100 and can be called any time
 **for in & for of**
 
 if you want to iterate over the properties of an object, you should use for...in it iterates over the keys of the object. If you want to loop through the values of an iterable data structure like an array or a string, use for...of
+
+---
+
+we can enhance performance of loops that is searching for an item by using break to break out of loop when item is found and cancel rest of the array
