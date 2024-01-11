@@ -17,3 +17,10 @@ let repeatedNumbers2 = arr.filter(
 );
 let result2 = [...new Set(repeatedNumbers2)];
 //result= [ 4, 3, 2, 5, 1 ]
+
+// check if there is duplicates
+const containsDuplicate = function (numbers) {
+  console.log(new Set(numbers).size !== numbers.length);
+  // using Set.size is faster than using [...new Set()].length
+};
+containsDuplicate([1, 2, 3, 3]);
