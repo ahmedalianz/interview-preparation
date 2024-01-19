@@ -34,7 +34,6 @@ const moveZeroesFast = numbers => {
         low++;
       }
       high++;
-      numbers;
     }
   }
   console.log(numbers);
