@@ -23,7 +23,7 @@ function selectionSort2(array) {
         lowestIdx = j;
       }
     }
-    //we need to remove the lowest and it it at first every loop
+    //we need to remove the lowest and add it at first every loop
     // add the lowest after current index
     array.splice(i, 0, array.splice(lowestIdx, 1)[0]);
   }

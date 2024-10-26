@@ -1,0 +1,71 @@
+
+----> Adding Custom Fonts to A React Native Application for IOS
+    https://medium.com/react-native-training/adding-custom-fonts-to-react-native-b266b41bff7f
+
+
+----> restart fresh 
+    Quit Xcode.
+    Delete project's temp files located at ~/Library/Developer/Xcode/DerivedData
+    Delete ProjectName.xcworkspace
+    Delete Podfile.lock file and Pods folder
+    Run pod install.
+    Open the newly created ProjectName.xcworkspace file and build.
+
+----> Completly remove Cocoapods
+    Unlink and uninstall CocoaPods: Ensure that CocoaPods is unlinked and uninstall it using Homebrew:
+    Remove any remaining CocoaPods files: Remove any remaining files related to CocoaPods:
+    Check for other installations: Verify if CocoaPods is installed via RubyGems or other methods:
+    Remove any remaining CocoaPods gems: If CocoaPods is listed, you can remove it using gem uninstall:
+    Verify removal: Finally, check if CocoaPods has been completely removed:
+
+    do next steps in reverse
+    pod --version
+    sudo gem uninstall cocoapods
+    gem list --local | grep cocoapods
+    sudo rm -rf ~/.cocoapods
+    sudo rm -rf /usr/local/bin/pod
+    brew unlink cocoapods
+    brew uninstall cocoapods
+    
+    Check for other installations: Run the following command to list all installed gems and see if CocoaPods is listed:
+    Check executable path: Run which pod to see the path of the pod executable. This can help determine where CocoaPods is installed from.
+    Search for CocoaPods executable: You can use the find command to search for any remaining CocoaPods executables:
+    Remove any remaining CocoaPods executables: If you find any remaining CocoaPods executables, you can remove them manually:
+    Rehash RubyGems: If you've removed CocoaPods installed via RubyGems, you may need to rehash RubyGems to reflect the changes:
+
+    do next steps in reverse
+    hash -r
+    sudo rm -rf <path_to_pod_executable>
+    sudo find / -name "pod" -type f
+    which pod
+    gem list --local
+    inside Library/.cocoapods/repo 
+    git clone https://github.com/CocoaPods/Specs.git master
+ 
+
+
+----> Intall CocoaPods
+ https://jideije-emeka.medium.com/how-to-properly-install-cocoapods-you-dont-have-write-permissions-for-the-library-ruby-gems-2-6-0-41ba58ee9f2b
+
+
+----> Error in Building due to node version mismatch
+
+    https://github.com/facebook/react-native/issues/36886
+ 
+    node version used must be same as xcode using
+ 
+    export NODE_BINARY=$(command -v node)
+
+
+===> Start New project
+    add source 'https://github.com/CocoaPods/Specs.git' in Podfile
+    add export NODE_BINARY=$(command -v node) in xcode in bundle code & images
+
+===> No Script present & jsbundel not exist
+    do this => npx react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios
+    add mian.jsbundle in project name and make sure it's in build settings copy bundle resources
+    
+===> 
+===> 
+===> 
+===> 

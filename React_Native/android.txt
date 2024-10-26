@@ -1,0 +1,15 @@
+===> issue in gradle version 
+    change it from project structure
+    gradle sync & invalidate cache
+
+===> mismatch jdk
+    assign jdk from gradle settings in Android studio
+
+===> 
+
+===> 
+===> 
+===> 
+===> 
+===> 
+===> 
