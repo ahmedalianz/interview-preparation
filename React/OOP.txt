@@ -1,0 +1,13 @@
+Encapsulation in OOP means bundling data and methods that operate on that data within an object. In React Native, components encapsulate their own logic and state.
+By using props and state, React Native encapsulates each component's data, allowing each component to manage its own state and receive data from its parent via props.
+
+Inheritance allows one class to inherit properties and methods from another. However, in React Native, inheritance is not commonly used because React relies more on composition than inheritance.
+Composition means building complex components by combining simpler ones, which aligns with React’s philosophy.Instead of inheriting from other components, React components are often composed together.
+
+
+Polymorphism allows objects of different types to be treated as instances of the same class. In React Native, polymorphism can be observed when components receive props and render different content based on those props.
+For example, a < Button > component can render differently depending on whether it’s a primary or secondary button, based on props passed to it.
+
+
+Abstraction is the concept of hiding implementation details and exposing only necessary parts of an object or function.
+In React Native, abstraction is commonly achieved by creating reusable components that abstract complex logic or UI elements, simplifying the code that uses them.

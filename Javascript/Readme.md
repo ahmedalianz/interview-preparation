@@ -84,4 +84,10 @@ if you want to iterate over the properties of an object, you should use for...in
 
 ---
 
+**nullish coalescing ??**
+
+it will always return the first value if it's not null or undefined
+
+---
+
 we can enhance performance of loops that is searching for an item by using break to break out of loop when item is found and cancel rest of the array
